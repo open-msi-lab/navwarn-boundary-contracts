@@ -1,0 +1,102 @@
+{
+  "abstainable_fields": [
+    "geometry",
+    "temporal",
+    "restrictions",
+    "affected_entities",
+    "authority",
+    "lifecycle_refs"
+  ],
+  "abstention_reasons": [
+    "NO_PARSER",
+    "NOT_IN_TEXT",
+    "NO_TEXTUAL_SUPPORT",
+    "UNRESOLVED_EVIDENCE",
+    "VALIDATION_FAILED",
+    "LLM_REFUSAL",
+    "LLM_TRUNCATED",
+    "FALLBACK_FAILED"
+  ],
+  "classification_fields": [
+    "message_function",
+    "event_type"
+  ],
+  "description": "Fields and code lists of the evidence-linked warning record (Table 2). Evidence is a list of [start, end) Unicode code-point intervals into the source text whose SHA-256 digest the record carries.",
+  "entity_classes": [
+    "VESSEL",
+    "AID_TO_NAVIGATION",
+    "STRUCTURE",
+    "CABLE_OR_PIPELINE",
+    "OPERATION",
+    "AREA_NAME",
+    "AIRCRAFT",
+    "OTHER"
+  ],
+  "entity_status": [
+    "INOPERATIVE",
+    "DAMAGED",
+    "ADRIFT",
+    "MISSING",
+    "SUNK",
+    "RESTORED",
+    "OTHER_STATUS"
+  ],
+  "event_types": [
+    "NAV_WARNING",
+    "MET_WARNING",
+    "SAR_INFO",
+    "PIRACY_ALERT",
+    "PORT_INFO",
+    "OTHER"
+  ],
+  "fields": [
+    "message_function",
+    "event_type",
+    "geometry",
+    "temporal",
+    "restrictions",
+    "affected_entities",
+    "authority",
+    "lifecycle_refs"
+  ],
+  "geometry_kinds": [
+    "POINT",
+    "LINE",
+    "POLYGON",
+    "MULTIPOINT"
+  ],
+  "lifecycle_relations": [
+    "CANCELS",
+    "SUPERSEDES",
+    "REFERS_TO"
+  ],
+  "list_fields": [
+    "geometry",
+    "restrictions",
+    "affected_entities",
+    "lifecycle_refs"
+  ],
+  "message_functions": [
+    "NEW_WARNING",
+    "UPDATE",
+    "CANCEL_ONLY",
+    "RECURRING_BULLETIN",
+    "ADMIN_ERROR"
+  ],
+  "restriction_codes": [
+    "AVOID_AREA",
+    "WIDE_BERTH",
+    "NO_ANCHORING",
+    "SPEED_RESTRICTION",
+    "BERTH_PROHIBITED",
+    "CONTACT_AUTHORITY",
+    "CAUTION_ADVISED",
+    "OTHER"
+  ],
+  "scalar_fields": [
+    "message_function",
+    "event_type",
+    "temporal",
+    "authority"
+  ]
+}

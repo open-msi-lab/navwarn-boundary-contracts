@@ -1,0 +1,679 @@
+{
+  "description": "Descriptive decompositions of the inspection and exchange results; no new model calls, labels or scores.",
+  "exchange_contract": {
+    "available": true,
+    "by_scope_and_frame": {
+      "DeepSeek/full|china_msa": {
+        "detected_by_range_check": 152,
+        "displaced": 152,
+        "missed_by_range_check": 0,
+        "missed_share": 0.0,
+        "positions": 152
+      },
+      "DeepSeek/full|navarea_iv": {
+        "detected_by_range_check": 63,
+        "displaced": 508,
+        "missed_by_range_check": 445,
+        "missed_share": 0.8759842519685039,
+        "positions": 508
+      },
+      "Flash/full|china_msa": {
+        "detected_by_range_check": 170,
+        "displaced": 170,
+        "missed_by_range_check": 0,
+        "missed_share": 0.0,
+        "positions": 170
+      },
+      "Flash/full|navarea_iv": {
+        "detected_by_range_check": 65,
+        "displaced": 520,
+        "missed_by_range_check": 455,
+        "missed_share": 0.875,
+        "positions": 520
+      },
+      "Luna/full|china_msa": {
+        "detected_by_range_check": 160,
+        "displaced": 160,
+        "missed_by_range_check": 0,
+        "missed_share": 0.0,
+        "positions": 160
+      },
+      "Luna/full|navarea_iv": {
+        "detected_by_range_check": 65,
+        "displaced": 520,
+        "missed_by_range_check": 455,
+        "missed_share": 0.875,
+        "positions": 520
+      },
+      "Sol/full|china_msa": {
+        "detected_by_range_check": 270,
+        "displaced": 270,
+        "missed_by_range_check": 0,
+        "missed_share": 0.0,
+        "positions": 270
+      },
+      "Sol/full|navarea_iv": {
+        "detected_by_range_check": 65,
+        "displaced": 520,
+        "missed_by_range_check": 455,
+        "missed_share": 0.875,
+        "positions": 520
+      },
+      "Sol/validation|china_msa": {
+        "detected_by_range_check": 199,
+        "displaced": 199,
+        "missed_by_range_check": 0,
+        "missed_share": 0.0,
+        "positions": 199
+      },
+      "Sol/validation|navarea_iv": {
+        "detected_by_range_check": 16,
+        "displaced": 200,
+        "missed_by_range_check": 184,
+        "missed_share": 0.92,
+        "positions": 200
+      },
+      "all|all": {
+        "detected_by_range_check": 1225,
+        "displaced": 3219,
+        "missed_by_range_check": 1994,
+        "missed_share": 0.6194470332401367,
+        "positions": 3219
+      },
+      "all|china_msa": {
+        "detected_by_range_check": 951,
+        "displaced": 951,
+        "missed_by_range_check": 0,
+        "missed_share": 0.0,
+        "positions": 951
+      },
+      "all|navarea_iv": {
+        "detected_by_range_check": 274,
+        "displaced": 2268,
+        "missed_by_range_check": 1994,
+        "missed_share": 0.8791887125220459,
+        "positions": 2268
+      }
+    },
+    "longitude_histogram": {
+      "bin_degrees": 5,
+      "lower_edge_counts": {
+        "china_msa": {
+          "100": 4,
+          "105": 85,
+          "110": 109,
+          "115": 101,
+          "120": 652
+        },
+        "navarea_iv": {
+          "-100": 30,
+          "-20": 8,
+          "-30": 13,
+          "-35": 1,
+          "-40": 36,
+          "-45": 72,
+          "-5": 8,
+          "-50": 113,
+          "-55": 173,
+          "-60": 351,
+          "-65": 102,
+          "-70": 55,
+          "-75": 119,
+          "-80": 389,
+          "-85": 411,
+          "-90": 143,
+          "-95": 244
+        }
+      }
+    }
+  },
+  "inputs_sha256": {
+    "data/fault-injection.json": "47333bc909c2a14d5e2aea505538136e4a810f9a52aab6f8d821191f9ef27f22",
+    "data/geometry-positions.json.gz": "0126ecd8eb09202aa0ec39ef64220a6f974adfbfe73a57451ed8e74d3c7461a2",
+    "data/geospatial-results.json": "e06419aa6f21b067301dfe37486bf1cc2d4844e0d2624747af82c7af77c16317",
+    "data/observable-records.json.gz": "fce86ff367bc284ba7cf724cfebd0a4cd4f1f917d0f50e752edcd18299af175e",
+    "data/triage-results.json": "3a06eea3072aa6fa7d1acc0a1832dd8f3f068c883c32738aa89f449a8d923f50"
+  },
+  "inspection_contract": {
+    "criterion_agreement": [
+      {
+        "observed_better_than_random": true,
+        "policy": "incident",
+        "predicted_better_than_random": true,
+        "set": "DeepSeek/full"
+      },
+      {
+        "observed_better_than_random": false,
+        "policy": "content_first",
+        "predicted_better_than_random": false,
+        "set": "DeepSeek/full"
+      },
+      {
+        "observed_better_than_random": true,
+        "policy": "incident",
+        "predicted_better_than_random": true,
+        "set": "Flash/full"
+      },
+      {
+        "observed_better_than_random": false,
+        "policy": "content_first",
+        "predicted_better_than_random": false,
+        "set": "Flash/full"
+      },
+      {
+        "observed_better_than_random": true,
+        "policy": "incident",
+        "predicted_better_than_random": true,
+        "set": "Luna/full"
+      },
+      {
+        "observed_better_than_random": true,
+        "policy": "content_first",
+        "predicted_better_than_random": true,
+        "set": "Luna/full"
+      },
+      {
+        "observed_better_than_random": true,
+        "policy": "incident",
+        "predicted_better_than_random": true,
+        "set": "Sol/full"
+      },
+      {
+        "observed_better_than_random": false,
+        "policy": "content_first",
+        "predicted_better_than_random": false,
+        "set": "Sol/full"
+      },
+      {
+        "observed_better_than_random": true,
+        "policy": "incident",
+        "predicted_better_than_random": true,
+        "set": "Sol/validation"
+      },
+      {
+        "observed_better_than_random": false,
+        "policy": "content_first",
+        "predicted_better_than_random": false,
+        "set": "Sol/validation"
+      }
+    ],
+    "criterion_agreement_count": 10,
+    "criterion_comparisons": 10,
+    "injected_corruption_coverage": {
+      "grammar_corrected_checker": {
+        "affected_entities": {
+          "cases": 87,
+          "mutated_field_alerts": 0,
+          "new_alert_coverage": 0.0,
+          "newly_triggered_alerts": 0
+        },
+        "geometry": {
+          "cases": 67,
+          "mutated_field_alerts": 58,
+          "new_alert_coverage": 0.8208955223880597,
+          "newly_triggered_alerts": 55
+        },
+        "lifecycle_refs": {
+          "cases": 6,
+          "mutated_field_alerts": 0,
+          "new_alert_coverage": 0.0,
+          "newly_triggered_alerts": 0
+        },
+        "temporal": {
+          "cases": 64,
+          "mutated_field_alerts": 52,
+          "new_alert_coverage": 0.46875,
+          "newly_triggered_alerts": 30
+        }
+      },
+      "initial_checker": {
+        "affected_entities": {
+          "cases": 87,
+          "mutated_field_alerts": 0,
+          "new_alert_coverage": 0.0,
+          "newly_triggered_alerts": 0
+        },
+        "geometry": {
+          "cases": 67,
+          "mutated_field_alerts": 58,
+          "new_alert_coverage": 0.7910447761194029,
+          "newly_triggered_alerts": 53
+        },
+        "lifecycle_refs": {
+          "cases": 6,
+          "mutated_field_alerts": 0,
+          "new_alert_coverage": 0.0,
+          "newly_triggered_alerts": 0
+        },
+        "temporal": {
+          "cases": 64,
+          "mutated_field_alerts": 53,
+          "new_alert_coverage": 0.328125,
+          "newly_triggered_alerts": 21
+        }
+      }
+    },
+    "per_set": {
+      "DeepSeek/full": {
+        "alerts": {
+          "any_content_flag": {
+            "alerted": 29,
+            "alerted_with_error": 2,
+            "false_alarm_rate": 0.2109375,
+            "natural_recall": 0.09090909090909091,
+            "positive_likelihood_ratio": 0.430976430976431,
+            "precision": 0.06896551724137931
+          },
+          "incident": {
+            "alerted": 17,
+            "alerted_with_error": 14,
+            "false_alarm_rate": 0.0234375,
+            "natural_recall": 0.6363636363636364,
+            "positive_likelihood_ratio": 27.151515151515152,
+            "precision": 0.8235294117647058
+          }
+        },
+        "allocation_at_20pct": {
+          "content_first": {
+            "residual": 0.15980392156862744,
+            "selected_errors": 2.8235294117647056
+          },
+          "incident": {
+            "residual": 0.06015037593984962,
+            "selected_errors": 14.781954887218046
+          },
+          "uniform": {
+            "residual": 0.14666666666666667,
+            "selected_errors": 4.4
+          }
+        },
+        "core_errors": 22,
+        "error_composition": {
+          "checkable": 7,
+          "lifecycle_only": 2,
+          "not_checkable": 15,
+          "omission_and_lifecycle": 0,
+          "omission_only": 13,
+          "other_not_checkable": 0
+        },
+        "n": 150,
+        "prevalence": 0.14666666666666667,
+        "quota_k": 30,
+        "saturation_identity_incident_only": {
+          "0.1": {
+            "alerted_m": 17,
+            "frozen_residual": 0.07145969498910676,
+            "predicted_residual": 0.07145969498910676,
+            "quota_k": 15
+          },
+          "0.2": {
+            "alerted_m": 17,
+            "frozen_residual": 0.06015037593984962,
+            "predicted_residual": 0.06015037593984965,
+            "quota_k": 30
+          },
+          "0.3": {
+            "alerted_m": 17,
+            "frozen_residual": 0.06015037593984963,
+            "predicted_residual": 0.06015037593984965,
+            "quota_k": 45
+          },
+          "0.4": {
+            "alerted_m": 17,
+            "frozen_residual": 0.06015037593984963,
+            "predicted_residual": 0.06015037593984965,
+            "quota_k": 60
+          },
+          "0.5": {
+            "alerted_m": 17,
+            "frozen_residual": 0.060150375939849614,
+            "predicted_residual": 0.06015037593984965,
+            "quota_k": 75
+          }
+        }
+      },
+      "Flash/full": {
+        "alerts": {
+          "any_content_flag": {
+            "alerted": 31,
+            "alerted_with_error": 2,
+            "false_alarm_rate": 0.21014492753623187,
+            "natural_recall": 0.16666666666666666,
+            "positive_likelihood_ratio": 0.7931034482758621,
+            "precision": 0.06451612903225806
+          },
+          "incident": {
+            "alerted": 6,
+            "alerted_with_error": 6,
+            "false_alarm_rate": 0.0,
+            "natural_recall": 0.5,
+            "positive_likelihood_ratio": "inf",
+            "precision": 1.0
+          }
+        },
+        "allocation_at_20pct": {
+          "content_first": {
+            "residual": 0.08387096774193549,
+            "selected_errors": 1.935483870967742
+          },
+          "incident": {
+            "residual": 0.041666666666666664,
+            "selected_errors": 7.0
+          },
+          "uniform": {
+            "residual": 0.08,
+            "selected_errors": 2.4
+          }
+        },
+        "core_errors": 12,
+        "error_composition": {
+          "checkable": 2,
+          "lifecycle_only": 5,
+          "not_checkable": 10,
+          "omission_and_lifecycle": 0,
+          "omission_only": 5,
+          "other_not_checkable": 0
+        },
+        "n": 150,
+        "prevalence": 0.08,
+        "quota_k": 30,
+        "saturation_identity_incident_only": {
+          "0.1": {
+            "alerted_m": 6,
+            "frozen_residual": 0.041666666666666664,
+            "predicted_residual": 0.041666666666666664,
+            "quota_k": 15
+          },
+          "0.2": {
+            "alerted_m": 6,
+            "frozen_residual": 0.041666666666666664,
+            "predicted_residual": 0.041666666666666664,
+            "quota_k": 30
+          },
+          "0.3": {
+            "alerted_m": 6,
+            "frozen_residual": 0.041666666666666664,
+            "predicted_residual": 0.041666666666666664,
+            "quota_k": 45
+          },
+          "0.4": {
+            "alerted_m": 6,
+            "frozen_residual": 0.041666666666666664,
+            "predicted_residual": 0.041666666666666664,
+            "quota_k": 60
+          },
+          "0.5": {
+            "alerted_m": 6,
+            "frozen_residual": 0.041666666666666664,
+            "predicted_residual": 0.041666666666666664,
+            "quota_k": 75
+          }
+        }
+      },
+      "Luna/full": {
+        "alerts": {
+          "any_content_flag": {
+            "alerted": 32,
+            "alerted_with_error": 8,
+            "false_alarm_rate": 0.2033898305084746,
+            "natural_recall": 0.25,
+            "positive_likelihood_ratio": 1.2291666666666665,
+            "precision": 0.25
+          },
+          "incident": {
+            "alerted": 15,
+            "alerted_with_error": 9,
+            "false_alarm_rate": 0.05084745762711865,
+            "natural_recall": 0.28125,
+            "positive_likelihood_ratio": 5.53125,
+            "precision": 0.6
+          }
+        },
+        "allocation_at_20pct": {
+          "content_first": {
+            "residual": 0.20416666666666666,
+            "selected_errors": 7.5
+          },
+          "incident": {
+            "residual": 0.17037037037037037,
+            "selected_errors": 11.555555555555555
+          },
+          "uniform": {
+            "residual": 0.21333333333333335,
+            "selected_errors": 6.4
+          }
+        },
+        "core_errors": 32,
+        "error_composition": {
+          "checkable": 6,
+          "lifecycle_only": 18,
+          "not_checkable": 26,
+          "omission_and_lifecycle": 2,
+          "omission_only": 10,
+          "other_not_checkable": 0
+        },
+        "n": 150,
+        "prevalence": 0.21333333333333335,
+        "quota_k": 30,
+        "saturation_identity_incident_only": {
+          "0.1": {
+            "alerted_m": 15,
+            "frozen_residual": 0.17037037037037037,
+            "predicted_residual": 0.1703703703703704,
+            "quota_k": 15
+          },
+          "0.2": {
+            "alerted_m": 15,
+            "frozen_residual": 0.17037037037037037,
+            "predicted_residual": 0.1703703703703704,
+            "quota_k": 30
+          },
+          "0.3": {
+            "alerted_m": 15,
+            "frozen_residual": 0.17037037037037037,
+            "predicted_residual": 0.1703703703703704,
+            "quota_k": 45
+          },
+          "0.4": {
+            "alerted_m": 15,
+            "frozen_residual": 0.1703703703703704,
+            "predicted_residual": 0.1703703703703704,
+            "quota_k": 60
+          },
+          "0.5": {
+            "alerted_m": 15,
+            "frozen_residual": 0.1703703703703704,
+            "predicted_residual": 0.1703703703703704,
+            "quota_k": 75
+          }
+        }
+      },
+      "Sol/full": {
+        "alerts": {
+          "any_content_flag": {
+            "alerted": 30,
+            "alerted_with_error": 0,
+            "false_alarm_rate": 0.2127659574468085,
+            "natural_recall": 0.0,
+            "positive_likelihood_ratio": 0.0,
+            "precision": 0.0
+          },
+          "incident": {
+            "alerted": 13,
+            "alerted_with_error": 2,
+            "false_alarm_rate": 0.07801418439716312,
+            "natural_recall": 0.2222222222222222,
+            "positive_likelihood_ratio": 2.848484848484848,
+            "precision": 0.15384615384615385
+          }
+        },
+        "allocation_at_20pct": {
+          "content_first": {
+            "residual": 0.075,
+            "selected_errors": 0.0
+          },
+          "incident": {
+            "residual": 0.05109489051094891,
+            "selected_errors": 2.8686131386861313
+          },
+          "uniform": {
+            "residual": 0.060000000000000005,
+            "selected_errors": 1.7999999999999998
+          }
+        },
+        "core_errors": 9,
+        "error_composition": {
+          "checkable": 3,
+          "lifecycle_only": 4,
+          "not_checkable": 6,
+          "omission_and_lifecycle": 1,
+          "omission_only": 2,
+          "other_not_checkable": 1
+        },
+        "n": 150,
+        "prevalence": 0.06,
+        "quota_k": 30,
+        "saturation_identity_incident_only": {
+          "0.1": {
+            "alerted_m": 13,
+            "frozen_residual": 0.051094890510948905,
+            "predicted_residual": 0.0510948905109489,
+            "quota_k": 15
+          },
+          "0.2": {
+            "alerted_m": 13,
+            "frozen_residual": 0.05109489051094891,
+            "predicted_residual": 0.0510948905109489,
+            "quota_k": 30
+          },
+          "0.3": {
+            "alerted_m": 13,
+            "frozen_residual": 0.051094890510948905,
+            "predicted_residual": 0.0510948905109489,
+            "quota_k": 45
+          },
+          "0.4": {
+            "alerted_m": 13,
+            "frozen_residual": 0.051094890510948905,
+            "predicted_residual": 0.0510948905109489,
+            "quota_k": 60
+          },
+          "0.5": {
+            "alerted_m": 13,
+            "frozen_residual": 0.0510948905109489,
+            "predicted_residual": 0.0510948905109489,
+            "quota_k": 75
+          }
+        }
+      },
+      "Sol/validation": {
+        "alerts": {
+          "any_content_flag": {
+            "alerted": 29,
+            "alerted_with_error": 3,
+            "false_alarm_rate": 0.29545454545454547,
+            "natural_recall": 0.25,
+            "positive_likelihood_ratio": 0.8461538461538461,
+            "precision": 0.10344827586206896
+          },
+          "incident": {
+            "alerted": 15,
+            "alerted_with_error": 2,
+            "false_alarm_rate": 0.14772727272727273,
+            "natural_recall": 0.16666666666666666,
+            "positive_likelihood_ratio": 1.1282051282051282,
+            "precision": 0.13333333333333333
+          }
+        },
+        "allocation_at_20pct": {
+          "content_first": {
+            "residual": 0.12455357142857144,
+            "selected_errors": 2.0357142857142856
+          },
+          "incident": {
+            "residual": 0.11764705882352941,
+            "selected_errors": 2.588235294117647
+          },
+          "uniform": {
+            "residual": 0.12,
+            "selected_errors": 2.4
+          }
+        },
+        "core_errors": 12,
+        "error_composition": {
+          "checkable": 8,
+          "lifecycle_only": 3,
+          "not_checkable": 4,
+          "omission_and_lifecycle": 0,
+          "omission_only": 1,
+          "other_not_checkable": 0
+        },
+        "n": 100,
+        "prevalence": 0.12,
+        "quota_k": 20,
+        "saturation_identity_incident_only": {
+          "0.1": {
+            "alerted_m": 15,
+            "frozen_residual": 0.11851851851851851,
+            "predicted_residual": 0.11851851851851851,
+            "quota_k": 10
+          },
+          "0.2": {
+            "alerted_m": 15,
+            "frozen_residual": 0.11764705882352941,
+            "predicted_residual": 0.11764705882352941,
+            "quota_k": 20
+          },
+          "0.3": {
+            "alerted_m": 15,
+            "frozen_residual": 0.1176470588235294,
+            "predicted_residual": 0.11764705882352941,
+            "quota_k": 30
+          },
+          "0.4": {
+            "alerted_m": 15,
+            "frozen_residual": 0.11764705882352941,
+            "predicted_residual": 0.11764705882352941,
+            "quota_k": 40
+          },
+          "0.5": {
+            "alerted_m": 15,
+            "frozen_residual": 0.11764705882352942,
+            "predicted_residual": 0.11764705882352941,
+            "quota_k": 50
+          }
+        }
+      }
+    },
+    "pooled_reporting": {
+      "any_content_flag": {
+        "alerted": 122,
+        "alerted_with_error": 12,
+        "false_alarm_rate": 0.20952380952380953,
+        "natural_recall": 0.16,
+        "positive_likelihood_ratio": 0.7636363636363637,
+        "precision": 0.09836065573770492
+      },
+      "core_errors": 75,
+      "error_composition": {
+        "checkable": 18,
+        "lifecycle_only": 29,
+        "not_checkable": 57,
+        "omission_and_lifecycle": 3,
+        "omission_only": 30,
+        "other_not_checkable": 1
+      },
+      "incident": {
+        "alerted": 51,
+        "alerted_with_error": 31,
+        "false_alarm_rate": 0.0380952380952381,
+        "natural_recall": 0.41333333333333333,
+        "positive_likelihood_ratio": 10.85,
+        "precision": 0.6078431372549019
+      },
+      "n": 600
+    },
+    "saturation_identity_max_abs_deviation": 3.469446951953614e-17,
+    "saturation_identity_points_checked": 25
+  }
+}

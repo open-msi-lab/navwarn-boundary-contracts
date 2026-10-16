@@ -1,0 +1,57 @@
+{
+  "configurations": {
+    "DeepSeek/full": {
+      "expected_selected_characters": {
+        "full_learner": 32281.0,
+        "incident": 26088.812030075187,
+        "structural_learner": 32255.0,
+        "text_length": 38610.0
+      },
+      "full_to_incident_ratio": 1.2373503233028187,
+      "quota_n": 30
+    },
+    "Flash/full": {
+      "expected_selected_characters": {
+        "full_learner": 31953.0,
+        "incident": 21264.0,
+        "structural_learner": 33802.0,
+        "text_length": 38610.0
+      },
+      "full_to_incident_ratio": 1.502680586907449,
+      "quota_n": 30
+    },
+    "Luna/full": {
+      "expected_selected_characters": {
+        "full_learner": 31800.0,
+        "incident": 21472.444444444445,
+        "structural_learner": 33336.0,
+        "text_length": 38610.0
+      },
+      "full_to_incident_ratio": 1.4809678554426344,
+      "quota_n": 30
+    },
+    "Sol/full": {
+      "expected_selected_characters": {
+        "full_learner": 29464.0,
+        "incident": 16747.357664233576,
+        "structural_learner": 31102.0,
+        "text_length": 38610.0
+      },
+      "full_to_incident_ratio": 1.7593223116578365,
+      "quota_n": 30
+    },
+    "Sol/validation": {
+      "expected_selected_characters": {
+        "full_learner": 9326.0,
+        "incident": 6449.176470588235,
+        "structural_learner": 9385.0,
+        "text_length": 15065.0
+      },
+      "full_to_incident_ratio": 1.4460761063884127,
+      "quota_n": 20
+    }
+  },
+  "reporting_core_error_outputs": 75,
+  "reporting_core_error_warnings": 44,
+  "scope": "Descriptive review-prompted diagnostic at the fixed 20% record-count quota. Characters are not review time and are not comparable work units across languages."
+}

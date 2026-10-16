@@ -1,0 +1,545 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": false,
+  "properties": {
+    "abstentions": {
+      "additionalProperties": false,
+      "description": "Optional per-field abstention reasons; the only model-usable code is NO_TEXTUAL_SUPPORT (system codes are assigned by the pipeline).",
+      "properties": {
+        "affected_entities": {
+          "enum": [
+            "NO_TEXTUAL_SUPPORT"
+          ],
+          "type": "string"
+        },
+        "authority": {
+          "enum": [
+            "NO_TEXTUAL_SUPPORT"
+          ],
+          "type": "string"
+        },
+        "geometry": {
+          "enum": [
+            "NO_TEXTUAL_SUPPORT"
+          ],
+          "type": "string"
+        },
+        "lifecycle_refs": {
+          "enum": [
+            "NO_TEXTUAL_SUPPORT"
+          ],
+          "type": "string"
+        },
+        "restrictions": {
+          "enum": [
+            "NO_TEXTUAL_SUPPORT"
+          ],
+          "type": "string"
+        },
+        "temporal": {
+          "enum": [
+            "NO_TEXTUAL_SUPPORT"
+          ],
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "affected_entities": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "class": {
+            "enum": [
+              "VESSEL",
+              "AID_TO_NAVIGATION",
+              "STRUCTURE",
+              "CABLE_OR_PIPELINE",
+              "OPERATION",
+              "AREA_NAME",
+              "AIRCRAFT",
+              "OTHER"
+            ],
+            "type": "string"
+          },
+          "evidence": {
+            "description": "Verbatim supporting quotes from the message text, minimal spans (§3.2). occurrence = 1-based index of the quote's occurrence in the text after whitespace normalization.",
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "occurrence": {
+                  "minimum": 1,
+                  "type": "integer"
+                },
+                "quote": {
+                  "minLength": 1,
+                  "type": "string"
+                }
+              },
+              "required": [
+                "quote",
+                "occurrence"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "part": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "status": {
+            "enum": [
+              "INOPERATIVE",
+              "DAMAGED",
+              "ADRIFT",
+              "MISSING",
+              "SUNK",
+              "RESTORED",
+              "OTHER_STATUS",
+              null
+            ],
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "text_norm": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "class",
+          "text_norm",
+          "part",
+          "evidence",
+          "status"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "authority": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence": {
+          "description": "Verbatim supporting quotes from the message text, minimal spans (§3.2). occurrence = 1-based index of the quote's occurrence in the text after whitespace normalization.",
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "occurrence": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "quote": {
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "quote",
+              "occurrence"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "value": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "value",
+        "evidence"
+      ],
+      "type": "object"
+    },
+    "event_type": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence": {
+          "description": "Verbatim supporting quotes from the message text, minimal spans (§3.2). occurrence = 1-based index of the quote's occurrence in the text after whitespace normalization.",
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "occurrence": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "quote": {
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "quote",
+              "occurrence"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "value": {
+          "enum": [
+            "NAV_WARNING",
+            "MET_WARNING",
+            "SAR_INFO",
+            "PIRACY_ALERT",
+            "PORT_INFO",
+            "OTHER"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "value",
+        "evidence"
+      ],
+      "type": "object"
+    },
+    "geometry": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "coordinates": {
+            "items": {
+              "description": "[lat, lon] signed decimal degrees WGS84, 5 dp",
+              "items": {
+                "type": "number"
+              },
+              "maxItems": 2,
+              "minItems": 2,
+              "type": "array"
+            },
+            "minItems": 1,
+            "type": "array"
+          },
+          "evidence": {
+            "description": "Verbatim supporting quotes from the message text, minimal spans (§3.2). occurrence = 1-based index of the quote's occurrence in the text after whitespace normalization.",
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "occurrence": {
+                  "minimum": 1,
+                  "type": "integer"
+                },
+                "quote": {
+                  "minLength": 1,
+                  "type": "string"
+                }
+              },
+              "required": [
+                "quote",
+                "occurrence"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "kind": {
+            "enum": [
+              "POINT",
+              "LINE",
+              "POLYGON",
+              "MULTIPOINT"
+            ],
+            "type": "string"
+          },
+          "part": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "radius_nm": {
+            "exclusiveMinimum": 0,
+            "type": [
+              "number",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "kind",
+          "coordinates",
+          "radius_nm",
+          "part",
+          "evidence"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "lifecycle_refs": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "evidence": {
+            "description": "Verbatim supporting quotes from the message text, minimal spans (§3.2). occurrence = 1-based index of the quote's occurrence in the text after whitespace normalization.",
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "occurrence": {
+                  "minimum": 1,
+                  "type": "integer"
+                },
+                "quote": {
+                  "minLength": 1,
+                  "type": "string"
+                }
+              },
+              "required": [
+                "quote",
+                "occurrence"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "rel": {
+            "enum": [
+              "CANCELS",
+              "SUPERSEDES",
+              "REFERS_TO"
+            ],
+            "type": "string"
+          },
+          "target": {
+            "anyOf": [
+              {
+                "additionalProperties": false,
+                "properties": {
+                  "msg_number": {
+                    "minimum": 1,
+                    "type": "integer"
+                  },
+                  "msg_year": {
+                    "maximum": 9999,
+                    "minimum": 1000,
+                    "type": "integer"
+                  },
+                  "nav_area": {
+                    "minimum": 1,
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "nav_area",
+                  "msg_year",
+                  "msg_number"
+                ],
+                "type": "object"
+              },
+              {
+                "additionalProperties": false,
+                "properties": {
+                  "issuer": {
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "msg_number": {
+                    "minimum": 1,
+                    "type": "integer"
+                  },
+                  "msg_year": {
+                    "maximum": 9999,
+                    "minimum": 1000,
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "issuer",
+                  "msg_year",
+                  "msg_number"
+                ],
+                "type": "object"
+              }
+            ],
+            "description": "Exactly one target family: EN nav_area or ZH issuer; never both."
+          }
+        },
+        "required": [
+          "rel",
+          "target",
+          "evidence"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "message_function": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence": {
+          "description": "Verbatim supporting quotes from the message text, minimal spans (§3.2). occurrence = 1-based index of the quote's occurrence in the text after whitespace normalization.",
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "occurrence": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "quote": {
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "quote",
+              "occurrence"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "value": {
+          "enum": [
+            "NEW_WARNING",
+            "UPDATE",
+            "CANCEL_ONLY",
+            "RECURRING_BULLETIN",
+            "ADMIN_ERROR"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "value",
+        "evidence"
+      ],
+      "type": "object"
+    },
+    "restrictions": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+            "enum": [
+              "AVOID_AREA",
+              "WIDE_BERTH",
+              "NO_ANCHORING",
+              "SPEED_RESTRICTION",
+              "BERTH_PROHIBITED",
+              "CONTACT_AUTHORITY",
+              "CAUTION_ADVISED",
+              "OTHER"
+            ],
+            "type": "string"
+          },
+          "evidence": {
+            "description": "Verbatim supporting quotes from the message text, minimal spans (§3.2). occurrence = 1-based index of the quote's occurrence in the text after whitespace normalization.",
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "occurrence": {
+                  "minimum": 1,
+                  "type": "integer"
+                },
+                "quote": {
+                  "minLength": 1,
+                  "type": "string"
+                }
+              },
+              "required": [
+                "quote",
+                "occurrence"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "part": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "text_norm": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "code",
+          "text_norm",
+          "part",
+          "evidence"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "temporal": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence": {
+          "description": "Verbatim supporting quotes from the message text, minimal spans (§3.2). occurrence = 1-based index of the quote's occurrence in the text after whitespace normalization.",
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "occurrence": {
+                "minimum": 1,
+                "type": "integer"
+              },
+              "quote": {
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "quote",
+              "occurrence"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "schedule_text": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "until_further_notice": {
+          "type": "boolean"
+        },
+        "valid_end": {
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "valid_start": {
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$",
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "valid_start",
+        "valid_end",
+        "until_further_notice",
+        "schedule_text",
+        "evidence"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "message_function",
+    "event_type",
+    "geometry",
+    "temporal",
+    "restrictions",
+    "affected_entities",
+    "authority",
+    "lifecycle_refs",
+    "abstentions"
+  ],
+  "title": "NW-IE extraction record (EN/ZH), quote+occurrence",
+  "type": "object",
+  "x-nwie-schema-version": "nwie-extract-schema-v1.2"
+}

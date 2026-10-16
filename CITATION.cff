@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite the article and this repository."
+title: "Data for: Assuring large language model extraction of navigational warnings: A boundary-contract framework from free text to geospatial exchange"
+type: dataset
+authors:
+  - family-names: Liu
+    given-names: Hongze
+    affiliation: "Navigation College, Dalian Maritime University"
+  - family-names: Guo
+    given-names: Muzhuang
+    affiliation: "Navigation College, Dalian Maritime University"
+  - family-names: Liu
+    given-names: Zhengjiang
+    affiliation: "Navigation College, Dalian Maritime University"
+version: "1.0.0"
+license: CC-BY-4.0
+keywords:
+  - navigational warnings
+  - maritime safety information
+  - large language models
+  - information extraction
+  - S-124

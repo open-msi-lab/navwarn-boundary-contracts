@@ -1,0 +1,54 @@
+{
+  "grammar_corrected_checker": {
+    "affected_entities": {
+      "base_field_flagged": 0,
+      "mutated_field_flagged": 0,
+      "n": 87,
+      "new_field_detection": 0
+    },
+    "geometry": {
+      "base_field_flagged": 3,
+      "mutated_field_flagged": 58,
+      "n": 67,
+      "new_field_detection": 55
+    },
+    "lifecycle_refs": {
+      "base_field_flagged": 0,
+      "mutated_field_flagged": 0,
+      "n": 6,
+      "new_field_detection": 0
+    },
+    "temporal": {
+      "base_field_flagged": 22,
+      "mutated_field_flagged": 52,
+      "n": 64,
+      "new_field_detection": 30
+    }
+  },
+  "initial_checker": {
+    "affected_entities": {
+      "base_field_flagged": 0,
+      "mutated_field_flagged": 0,
+      "n": 87,
+      "new_field_detection": 0
+    },
+    "geometry": {
+      "base_field_flagged": 5,
+      "mutated_field_flagged": 58,
+      "n": 67,
+      "new_field_detection": 53
+    },
+    "lifecycle_refs": {
+      "base_field_flagged": 0,
+      "mutated_field_flagged": 0,
+      "n": 6,
+      "new_field_detection": 0
+    },
+    "temporal": {
+      "base_field_flagged": 32,
+      "mutated_field_flagged": 53,
+      "n": 64,
+      "new_field_detection": 21
+    }
+  }
+}

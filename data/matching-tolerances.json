@@ -1,0 +1,8 @@
+{
+  "area_iou_theta": 0.9,
+  "description": "Value-equivalence tolerances used for the normalized (N) matching mode, fixed before the reporting sample was scored.",
+  "line_buffer_nm": 0.5,
+  "point_epsilon_nm": 0.05,
+  "temporal_horizon": "2050-01-01T00:00:00Z",
+  "temporal_iou_tau": 0.9
+}

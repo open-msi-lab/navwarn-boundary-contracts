@@ -1,0 +1,1117 @@
+{
+  "Luna-full-2017-280": {
+    "record": {
+      "_pipeline": [
+        {
+          "stage": "prompt",
+          "system_chars": 18600,
+          "user_chars": 203,
+          "version": "nwie-extract-prompt-v1.3"
+        },
+        {
+          "client": "offline-fixed-response",
+          "raw_chars": 1323,
+          "stage": "llm"
+        },
+        {
+          "failure": null,
+          "stage": "parse"
+        },
+        {
+          "missing": [],
+          "stage": "structure"
+        },
+        {
+          "stage": "resolve",
+          "unresolved_total": 0
+        },
+        {
+          "failed": {},
+          "stage": "validate"
+        },
+        {
+          "abstained": [
+            "lifecycle_refs",
+            "restrictions",
+            "temporal"
+          ],
+          "flags": [],
+          "stage": "final"
+        }
+      ],
+      "abstentions": {
+        "lifecycle_refs": "NO_TEXTUAL_SUPPORT",
+        "restrictions": "NO_TEXTUAL_SUPPORT",
+        "temporal": "NO_TEXTUAL_SUPPORT"
+      },
+      "affected_entities": [
+        {
+          "class": "OTHER",
+          "evidence": [
+            {
+              "end": 111,
+              "quote": "SERVICES UNRELIABLE",
+              "start": 92
+            },
+            {
+              "end": 133,
+              "quote": "CHESAPEAKE (N)",
+              "start": 119
+            }
+          ],
+          "part": 1,
+          "status": "OTHER_STATUS",
+          "text_norm": "CHESAPEAKE (N)"
+        },
+        {
+          "class": "OTHER",
+          "evidence": [
+            {
+              "end": 111,
+              "quote": "SERVICES UNRELIABLE",
+              "start": 92
+            },
+            {
+              "end": 166,
+              "quote": "MIAMI (A)",
+              "start": 157
+            }
+          ],
+          "part": 1,
+          "status": "OTHER_STATUS",
+          "text_norm": "MIAMI (A)"
+        }
+      ],
+      "authority": {
+        "evidence": [
+          {
+            "end": 47,
+            "quote": "USCG",
+            "start": 43
+          }
+        ],
+        "value": "USCG"
+      },
+      "event_type": {
+        "evidence": [
+          {
+            "end": 100,
+            "quote": "DSC RECEIVE SERVICES",
+            "start": 80
+          }
+        ],
+        "value": "OTHER"
+      },
+      "flags": [],
+      "frame": "frame_v1",
+      "geometry": [
+        {
+          "coordinates": [
+            [
+              36.72833,
+              -76.01
+            ]
+          ],
+          "evidence": [
+            {
+              "end": 152,
+              "quote": "36-43.7N 076-00.6W",
+              "start": 134
+            }
+          ],
+          "kind": "POINT",
+          "part": 1,
+          "radius_nm": null
+        },
+        {
+          "coordinates": [
+            [
+              25.62333,
+              -80.39
+            ]
+          ],
+          "evidence": [
+            {
+              "end": 185,
+              "quote": "25-37.4N 080-23.4W",
+              "start": 167
+            }
+          ],
+          "kind": "POINT",
+          "part": 1,
+          "radius_nm": null
+        }
+      ],
+      "lang": "en",
+      "lifecycle_refs": [],
+      "message_function": {
+        "evidence": [
+          {
+            "end": 114,
+            "quote": "SERVICES UNRELIABLE AT",
+            "start": 92
+          }
+        ],
+        "value": "RECURRING_BULLETIN"
+      },
+      "prompt_version": "nwie-extract-prompt-v1.3",
+      "restrictions": [],
+      "schema_version": "nwie-extract-schema-v1.2",
+      "source": "nwie_extract_v0+offline-fixed-response",
+      "temporal": {
+        "evidence": [],
+        "schedule_text": null,
+        "until_further_notice": false,
+        "valid_end": null,
+        "valid_start": null
+      },
+      "text_sha256": "8df47148d5ce9e64174afd9b019188b5aa026f18daccac948bffa149cd63f3e2",
+      "uid": "2017-280"
+    },
+    "source": "WESTERN NORTH ATLANTIC.\nVIRGINIA.\nFLORIDA.\nUSCG REMOTE COMMUNICATION FACILITIES DSC RECEIVE\nSERVICES UNRELIABLE AT:\nA. CHESAPEAKE (N) 36-43.7N 076-00.6W.\nB. MIAMI (A) 25-37.4N 080-23.4W.\n"
+  },
+  "Luna-full-2020-447": {
+    "record": {
+      "_pipeline": [
+        {
+          "stage": "prompt",
+          "system_chars": 18600,
+          "user_chars": 1464,
+          "version": "nwie-extract-prompt-v1.3"
+        },
+        {
+          "client": "offline-fixed-response",
+          "raw_chars": 3248,
+          "stage": "llm"
+        },
+        {
+          "failure": null,
+          "stage": "parse"
+        },
+        {
+          "missing": [],
+          "stage": "structure"
+        },
+        {
+          "field": "geometry",
+          "stage": "resolve",
+          "unresolved": [
+            "SEA ICE LIMIT ALONG TRACKLINES JOINING: B. 62-25N 042-04W, 61-51N 041-22W, 61-30N 041-58W, 60-28N 042-26W, 60-11N 043-05W"
+          ]
+        },
+        {
+          "field": "temporal",
+          "stage": "resolve",
+          "unresolved": [
+            "280001Z MAY 20"
+          ]
+        },
+        {
+          "stage": "resolve",
+          "unresolved_total": 2
+        },
+        {
+          "failed": {
+            "geometry": "UNRESOLVED_EVIDENCE",
+            "temporal": "UNRESOLVED_EVIDENCE"
+          },
+          "stage": "validate"
+        },
+        {
+          "action": "rule",
+          "cause": "UNRESOLVED_EVIDENCE",
+          "field": "geometry",
+          "stage": "fallback"
+        },
+        {
+          "action": "rule",
+          "cause": "UNRESOLVED_EVIDENCE",
+          "field": "temporal",
+          "stage": "fallback"
+        },
+        {
+          "abstained": [
+            "affected_entities",
+            "lifecycle_refs"
+          ],
+          "flags": [
+            "FALLBACK_RULE:geometry",
+            "FALLBACK_RULE:temporal"
+          ],
+          "stage": "final"
+        }
+      ],
+      "abstentions": {
+        "affected_entities": "NO_TEXTUAL_SUPPORT",
+        "lifecycle_refs": "NO_TEXTUAL_SUPPORT"
+      },
+      "affected_entities": [],
+      "authority": {
+        "evidence": [
+          {
+            "end": 36,
+            "quote": "NORTH AMERICAN ICE SERVICE (NAIS)",
+            "start": 3
+          }
+        ],
+        "value": "NORTH AMERICAN ICE SERVICE (NAIS)"
+      },
+      "event_type": {
+        "evidence": [
+          {
+            "end": 56,
+            "quote": "ICEBERG BULLETIN",
+            "start": 40
+          }
+        ],
+        "value": "MET_WARNING"
+      },
+      "flags": [
+        "FALLBACK_RULE:geometry",
+        "FALLBACK_RULE:temporal"
+      ],
+      "frame": "frame_v1",
+      "geometry": [
+        {
+          "coordinates": [
+            [
+              47.06667,
+              -55.13333
+            ],
+            [
+              45.41667,
+              -53.83333
+            ],
+            [
+              44.33333,
+              -47.0
+            ],
+            [
+              46.16667,
+              -43.75
+            ],
+            [
+              47.41667,
+              -43.66667
+            ],
+            [
+              51.0,
+              -46.33333
+            ],
+            [
+              55.0,
+              -50.0
+            ],
+            [
+              55.0,
+              -50.0
+            ],
+            [
+              61.0,
+              -59.0
+            ],
+            [
+              62.75,
+              -56.0
+            ],
+            [
+              58.0,
+              -49.0
+            ],
+            [
+              59.0,
+              -42.0
+            ],
+            [
+              64.0,
+              -38.0
+            ],
+            [
+              64.66667,
+              -28.0
+            ],
+            [
+              50.3,
+              -59.9
+            ],
+            [
+              49.33333,
+              -58.1
+            ],
+            [
+              52.5,
+              -55.75
+            ],
+            [
+              52.5,
+              -55.5
+            ],
+            [
+              53.75,
+              -55.58333
+            ],
+            [
+              55.0,
+              -57.0
+            ],
+            [
+              58.0,
+              -59.0
+            ],
+            [
+              59.75,
+              -59.0
+            ],
+            [
+              61.0,
+              -61.0
+            ],
+            [
+              61.0,
+              -59.5
+            ],
+            [
+              64.0,
+              -57.91667
+            ],
+            [
+              62.41667,
+              -42.06667
+            ],
+            [
+              61.85,
+              -41.36667
+            ],
+            [
+              61.5,
+              -41.96667
+            ],
+            [
+              60.46667,
+              -42.43333
+            ],
+            [
+              60.18333,
+              -43.08333
+            ]
+          ],
+          "evidence": [
+            [
+              291,
+              305
+            ],
+            [
+              307,
+              321
+            ],
+            [
+              326,
+              340
+            ],
+            [
+              342,
+              356
+            ],
+            [
+              361,
+              375
+            ],
+            [
+              377,
+              391
+            ],
+            [
+              396,
+              410
+            ],
+            [
+              469,
+              483
+            ],
+            [
+              485,
+              499
+            ],
+            [
+              504,
+              518
+            ],
+            [
+              520,
+              534
+            ],
+            [
+              539,
+              553
+            ],
+            [
+              555,
+              569
+            ],
+            [
+              574,
+              588
+            ],
+            [
+              642,
+              656
+            ],
+            [
+              658,
+              672
+            ],
+            [
+              723,
+              737
+            ],
+            [
+              739,
+              753
+            ],
+            [
+              761,
+              775
+            ],
+            [
+              777,
+              791
+            ],
+            [
+              799,
+              813
+            ],
+            [
+              815,
+              829
+            ],
+            [
+              837,
+              851
+            ],
+            [
+              853,
+              867
+            ],
+            [
+              875,
+              889
+            ],
+            [
+              897,
+              911
+            ],
+            [
+              913,
+              927
+            ],
+            [
+              935,
+              949
+            ],
+            [
+              951,
+              965
+            ],
+            [
+              973,
+              987
+            ]
+          ],
+          "kind": "LINE",
+          "part": 1,
+          "radius_nm": null
+        }
+      ],
+      "lang": "en",
+      "lifecycle_refs": [],
+      "message_function": {
+        "evidence": [
+          {
+            "end": 56,
+            "quote": "ICEBERG BULLETIN",
+            "start": 40
+          }
+        ],
+        "value": "RECURRING_BULLETIN"
+      },
+      "prompt_version": "nwie-extract-prompt-v1.3",
+      "restrictions": [
+        {
+          "code": "CAUTION_ADVISED",
+          "evidence": [
+            {
+              "end": 245,
+              "quote": "PLEASE NAVIGATE WITH CAUTION",
+              "start": 217
+            }
+          ],
+          "part": 1,
+          "text_norm": "NAVIGATE WITH CAUTION"
+        },
+        {
+          "code": "CONTACT_AUTHORITY",
+          "evidence": [
+            {
+              "end": 1289,
+              "quote": "REPORT POSITION AND TIME OF ANY ICEBERGS SEA ICE OR STATIONARY RADAR TARGETS THAT MAY LIKELY BE ICE TO THE NEAREST CANADIAN COAST GUARD MARINE COMMUNICATIONS AND TRAFFIC SERVICE STATION OR USING INMARSAT CODE 42",
+              "start": 1066
+            }
+          ],
+          "part": 1,
+          "text_norm": "REPORT POSITION AND TIME OF ANY ICEBERGS SEA ICE OR STATIONARY RADAR TARGETS THAT MAY LIKELY BE ICE TO THE NEAREST CANADIAN COAST GUARD MARINE COMMUNICATIONS AND TRAFFIC SERVICE STATION OR USING INMARSAT CODE 42"
+        }
+      ],
+      "schema_version": "nwie-extract-schema-v1.2",
+      "source": "nwie_extract_v0+offline-fixed-response",
+      "temporal": {
+        "evidence": [
+          [
+            1432,
+            1446
+          ]
+        ],
+        "schedule_text": null,
+        "until_further_notice": false,
+        "valid_end": "2020-05-29T00:01:00Z",
+        "valid_start": null
+      },
+      "text_sha256": "bfd5e6206310e3705b52f7a8f9a1f87182d993ebaf5064229758271a7713a9af",
+      "uid": "2020-447"
+    },
+    "source": "1. NORTH AMERICAN ICE SERVICE (NAIS)\n   ICEBERG BULLETIN 280001Z MAY.\n2. WARNING! THE INTERNATIONAL ICE PATROL IS\n   EXPERIENCING REDUCED ICEBERG RECONNAISSANCE.\n   ALL ICEBERG LIMITS REPORTED BELOW ARE\n   ESTIMATED. PLEASE NAVIGATE WITH CAUTION.\n3. ICEBERG LIMIT ALONG TRACKLINE JOINING\n   47-04N 055-08W, 45-25N 053-50W,\n   44-20N 047-00W, 46-10N 043-45W,\n   47-25N 043-40W, 51-00N 046-20W,\n   55-00N 050-00W.\n4. ESTIMATED ICEBERG LIMIT ALONG TRACKLINE\n   JOINING\n   55-00N 050-00W, 61-00N 059-00W,\n   62-45N 056-00W, 58-00N 049-00W,\n   59-00N 042-00W, 64-00N 038-00W,\n   64-40N 028-00W.\n5. WESTERN ICEBERG LIMIT ALONG TRACKLINE JOINING\n   50-18N 059-54W, 49-20N 058-06W.\n6. SEA ICE LIMIT ALONG TRACKLINES JOINING:\n   A. 52-30N 055-45W, 52-30N 055-30W,\n      53-45N 055-35W, 55-00N 057-00W,\n      58-00N 059-00W, 59-45N 059-00W,\n      61-00N 061-00W, 61-00N 059-30W,\n      64-00N 057-55W.\n   B. 62-25N 042-04W, 61-51N 041-22W,\n      61-30N 041-58W, 60-28N 042-26W,\n      60-11N 043-05W.\n7. MOST RECENT RECONNAISSANCE:\n   WESTERN LIMIT ICEBERG FLIGHT 21 MAY 20.\n8. REPORT POSITION AND TIME OF ANY ICEBERGS SEA\n   ICE OR STATIONARY RADAR TARGETS THAT MAY\n   LIKELY BE ICE TO THE NEAREST CANADIAN COAST\n   GUARD MARINE COMMUNICATIONS AND TRAFFIC\n   SERVICE STATION OR USING INMARSAT CODE 42.\n9. FOR MORE REPORTING INFORMATION OR TO DOWNLOAD\n   SHAPEFILES AND WEEKLY PREDICTIONS, GO TO\n   WWW.NAVCEN.USCG.GOV/IIP.\n10. CANCEL THIS MSG 290001Z MAY 20.\n"
+  },
+  "Sol-full-2017-280": {
+    "record": {
+      "_pipeline": [
+        {
+          "stage": "prompt",
+          "system_chars": 18600,
+          "user_chars": 203,
+          "version": "nwie-extract-prompt-v1.3"
+        },
+        {
+          "client": "offline-fixed-response",
+          "raw_chars": 1233,
+          "stage": "llm"
+        },
+        {
+          "failure": null,
+          "stage": "parse"
+        },
+        {
+          "missing": [],
+          "stage": "structure"
+        },
+        {
+          "stage": "resolve",
+          "unresolved_total": 0
+        },
+        {
+          "failed": {},
+          "stage": "validate"
+        },
+        {
+          "abstained": [
+            "authority",
+            "lifecycle_refs",
+            "restrictions",
+            "temporal"
+          ],
+          "flags": [],
+          "stage": "final"
+        }
+      ],
+      "abstentions": {
+        "authority": "NO_TEXTUAL_SUPPORT",
+        "lifecycle_refs": "NO_TEXTUAL_SUPPORT",
+        "restrictions": "NO_TEXTUAL_SUPPORT",
+        "temporal": "NO_TEXTUAL_SUPPORT"
+      },
+      "affected_entities": [
+        {
+          "class": "OTHER",
+          "evidence": [
+            {
+              "end": 111,
+              "quote": "UNRELIABLE",
+              "start": 101
+            },
+            {
+              "end": 133,
+              "quote": "CHESAPEAKE (N)",
+              "start": 119
+            }
+          ],
+          "part": 1,
+          "status": "INOPERATIVE",
+          "text_norm": "CHESAPEAKE (N)"
+        },
+        {
+          "class": "OTHER",
+          "evidence": [
+            {
+              "end": 111,
+              "quote": "UNRELIABLE",
+              "start": 101
+            },
+            {
+              "end": 166,
+              "quote": "MIAMI (A)",
+              "start": 157
+            }
+          ],
+          "part": 1,
+          "status": "INOPERATIVE",
+          "text_norm": "MIAMI (A)"
+        }
+      ],
+      "authority": {
+        "evidence": [],
+        "value": null
+      },
+      "event_type": {
+        "evidence": [
+          {
+            "end": 111,
+            "quote": "DSC RECEIVE SERVICES UNRELIABLE",
+            "start": 80
+          }
+        ],
+        "value": "OTHER"
+      },
+      "flags": [],
+      "frame": "frame_v1",
+      "geometry": [
+        {
+          "coordinates": [
+            [
+              36.72833,
+              -76.01
+            ],
+            [
+              25.62333,
+              -80.39
+            ]
+          ],
+          "evidence": [
+            {
+              "end": 114,
+              "quote": "SERVICES UNRELIABLE AT",
+              "start": 92
+            },
+            {
+              "end": 152,
+              "quote": "36-43.7N 076-00.6W",
+              "start": 134
+            },
+            {
+              "end": 185,
+              "quote": "25-37.4N 080-23.4W",
+              "start": 167
+            }
+          ],
+          "kind": "MULTIPOINT",
+          "part": 1,
+          "radius_nm": null
+        }
+      ],
+      "lang": "en",
+      "lifecycle_refs": [],
+      "message_function": {
+        "evidence": [],
+        "value": "NEW_WARNING"
+      },
+      "prompt_version": "nwie-extract-prompt-v1.3",
+      "restrictions": [],
+      "schema_version": "nwie-extract-schema-v1.2",
+      "source": "nwie_extract_v0+offline-fixed-response",
+      "temporal": {
+        "evidence": [],
+        "schedule_text": null,
+        "until_further_notice": false,
+        "valid_end": null,
+        "valid_start": null
+      },
+      "text_sha256": "8df47148d5ce9e64174afd9b019188b5aa026f18daccac948bffa149cd63f3e2",
+      "uid": "2017-280"
+    },
+    "source": "WESTERN NORTH ATLANTIC.\nVIRGINIA.\nFLORIDA.\nUSCG REMOTE COMMUNICATION FACILITIES DSC RECEIVE\nSERVICES UNRELIABLE AT:\nA. CHESAPEAKE (N) 36-43.7N 076-00.6W.\nB. MIAMI (A) 25-37.4N 080-23.4W.\n"
+  },
+  "Sol-full-2020-447": {
+    "record": {
+      "_pipeline": [
+        {
+          "stage": "prompt",
+          "system_chars": 18600,
+          "user_chars": 1464,
+          "version": "nwie-extract-prompt-v1.3"
+        },
+        {
+          "client": "offline-fixed-response",
+          "raw_chars": 3771,
+          "stage": "llm"
+        },
+        {
+          "failure": null,
+          "stage": "parse"
+        },
+        {
+          "missing": [],
+          "stage": "structure"
+        },
+        {
+          "stage": "resolve",
+          "unresolved_total": 0
+        },
+        {
+          "failed": {},
+          "stage": "validate"
+        },
+        {
+          "abstained": [
+            "lifecycle_refs"
+          ],
+          "flags": [],
+          "stage": "final"
+        }
+      ],
+      "abstentions": {
+        "lifecycle_refs": "NO_TEXTUAL_SUPPORT"
+      },
+      "affected_entities": [
+        {
+          "class": "OPERATION",
+          "evidence": [
+            {
+              "end": 160,
+              "quote": "REDUCED ICEBERG RECONNAISSANCE",
+              "start": 130
+            },
+            {
+              "end": 160,
+              "quote": "ICEBERG RECONNAISSANCE",
+              "start": 138
+            }
+          ],
+          "part": 1,
+          "status": "OTHER_STATUS",
+          "text_norm": "ICEBERG RECONNAISSANCE"
+        },
+        {
+          "class": "OPERATION",
+          "evidence": [
+            {
+              "end": 1051,
+              "quote": "WESTERN LIMIT ICEBERG FLIGHT",
+              "start": 1023
+            }
+          ],
+          "part": 1,
+          "status": null,
+          "text_norm": "WESTERN LIMIT ICEBERG FLIGHT"
+        }
+      ],
+      "authority": {
+        "evidence": [
+          {
+            "end": 36,
+            "quote": "NORTH AMERICAN ICE SERVICE (NAIS)",
+            "start": 3
+          }
+        ],
+        "value": "NORTH AMERICAN ICE SERVICE (NAIS)"
+      },
+      "event_type": {
+        "evidence": [
+          {
+            "end": 215,
+            "quote": "ALL ICEBERG LIMITS REPORTED BELOW ARE ESTIMATED",
+            "start": 165
+          }
+        ],
+        "value": "MET_WARNING"
+      },
+      "flags": [],
+      "frame": "frame_v1",
+      "geometry": [
+        {
+          "coordinates": [
+            [
+              47.06667,
+              -55.13333
+            ],
+            [
+              45.41667,
+              -53.83333
+            ],
+            [
+              44.33333,
+              -47.0
+            ],
+            [
+              46.16667,
+              -43.75
+            ],
+            [
+              47.41667,
+              -43.66667
+            ],
+            [
+              51.0,
+              -46.33333
+            ],
+            [
+              55.0,
+              -50.0
+            ]
+          ],
+          "evidence": [
+            {
+              "end": 287,
+              "quote": "ICEBERG LIMIT ALONG TRACKLINE JOINING",
+              "start": 250
+            },
+            {
+              "end": 410,
+              "quote": "47-04N 055-08W, 45-25N 053-50W, 44-20N 047-00W, 46-10N 043-45W, 47-25N 043-40W, 51-00N 046-20W, 55-00N 050-00W",
+              "start": 291
+            }
+          ],
+          "kind": "LINE",
+          "part": 3,
+          "radius_nm": null
+        },
+        {
+          "coordinates": [
+            [
+              55.0,
+              -50.0
+            ],
+            [
+              61.0,
+              -59.0
+            ],
+            [
+              62.75,
+              -56.0
+            ],
+            [
+              58.0,
+              -49.0
+            ],
+            [
+              59.0,
+              -42.0
+            ],
+            [
+              64.0,
+              -38.0
+            ],
+            [
+              64.66667,
+              -28.0
+            ]
+          ],
+          "evidence": [
+            {
+              "end": 465,
+              "quote": "ESTIMATED ICEBERG LIMIT ALONG TRACKLINE JOINING",
+              "start": 415
+            },
+            {
+              "end": 588,
+              "quote": "55-00N 050-00W, 61-00N 059-00W, 62-45N 056-00W, 58-00N 049-00W, 59-00N 042-00W, 64-00N 038-00W, 64-40N 028-00W",
+              "start": 469
+            }
+          ],
+          "kind": "LINE",
+          "part": 4,
+          "radius_nm": null
+        },
+        {
+          "coordinates": [
+            [
+              50.3,
+              -59.9
+            ],
+            [
+              49.33333,
+              -58.1
+            ]
+          ],
+          "evidence": [
+            {
+              "end": 638,
+              "quote": "WESTERN ICEBERG LIMIT ALONG TRACKLINE JOINING",
+              "start": 593
+            },
+            {
+              "end": 672,
+              "quote": "50-18N 059-54W, 49-20N 058-06W",
+              "start": 642
+            }
+          ],
+          "kind": "LINE",
+          "part": 5,
+          "radius_nm": null
+        },
+        {
+          "coordinates": [
+            [
+              52.5,
+              -55.75
+            ],
+            [
+              52.5,
+              -55.5
+            ],
+            [
+              53.75,
+              -55.58333
+            ],
+            [
+              55.0,
+              -57.0
+            ],
+            [
+              58.0,
+              -59.0
+            ],
+            [
+              59.75,
+              -59.0
+            ],
+            [
+              61.0,
+              -61.0
+            ],
+            [
+              61.0,
+              -59.5
+            ],
+            [
+              64.0,
+              -57.91667
+            ]
+          ],
+          "evidence": [
+            {
+              "end": 715,
+              "quote": "SEA ICE LIMIT ALONG TRACKLINES JOINING",
+              "start": 677
+            },
+            {
+              "end": 889,
+              "quote": "52-30N 055-45W, 52-30N 055-30W, 53-45N 055-35W, 55-00N 057-00W, 58-00N 059-00W, 59-45N 059-00W, 61-00N 061-00W, 61-00N 059-30W, 64-00N 057-55W",
+              "start": 723
+            }
+          ],
+          "kind": "LINE",
+          "part": 6,
+          "radius_nm": null
+        },
+        {
+          "coordinates": [
+            [
+              62.41667,
+              -42.06667
+            ],
+            [
+              61.85,
+              -41.36667
+            ],
+            [
+              61.5,
+              -41.96667
+            ],
+            [
+              60.46667,
+              -42.43333
+            ],
+            [
+              60.18333,
+              -43.08333
+            ]
+          ],
+          "evidence": [
+            {
+              "end": 715,
+              "quote": "SEA ICE LIMIT ALONG TRACKLINES JOINING",
+              "start": 677
+            },
+            {
+              "end": 987,
+              "quote": "62-25N 042-04W, 61-51N 041-22W, 61-30N 041-58W, 60-28N 042-26W, 60-11N 043-05W",
+              "start": 897
+            }
+          ],
+          "kind": "LINE",
+          "part": 6,
+          "radius_nm": null
+        }
+      ],
+      "lang": "en",
+      "lifecycle_refs": [],
+      "message_function": {
+        "evidence": [
+          {
+            "end": 56,
+            "quote": "ICEBERG BULLETIN",
+            "start": 40
+          }
+        ],
+        "value": "RECURRING_BULLETIN"
+      },
+      "prompt_version": "nwie-extract-prompt-v1.3",
+      "restrictions": [
+        {
+          "code": "CAUTION_ADVISED",
+          "evidence": [
+            {
+              "end": 245,
+              "quote": "NAVIGATE WITH CAUTION",
+              "start": 224
+            }
+          ],
+          "part": 1,
+          "text_norm": "NAVIGATE WITH CAUTION"
+        },
+        {
+          "code": "CONTACT_AUTHORITY",
+          "evidence": [
+            {
+              "end": 1289,
+              "quote": "REPORT POSITION AND TIME OF ANY ICEBERGS SEA ICE OR STATIONARY RADAR TARGETS THAT MAY LIKELY BE ICE TO THE NEAREST CANADIAN COAST GUARD MARINE COMMUNICATIONS AND TRAFFIC SERVICE STATION OR USING INMARSAT CODE 42",
+              "start": 1066
+            }
+          ],
+          "part": 1,
+          "text_norm": "REPORT POSITION AND TIME OF ANY ICEBERGS SEA ICE OR STATIONARY RADAR TARGETS THAT MAY LIKELY BE ICE TO THE NEAREST CANADIAN COAST GUARD MARINE COMMUNICATIONS AND TRAFFIC SERVICE STATION OR USING INMARSAT CODE 42"
+        }
+      ],
+      "schema_version": "nwie-extract-schema-v1.2",
+      "source": "nwie_extract_v0+offline-fixed-response",
+      "temporal": {
+        "evidence": [
+          {
+            "end": 68,
+            "quote": "280001Z MAY",
+            "start": 57
+          },
+          {
+            "end": 1446,
+            "quote": "290001Z MAY 20",
+            "start": 1432
+          }
+        ],
+        "schedule_text": null,
+        "until_further_notice": false,
+        "valid_end": "2020-05-29T00:01:00Z",
+        "valid_start": "2020-05-28T00:01:00Z"
+      },
+      "text_sha256": "bfd5e6206310e3705b52f7a8f9a1f87182d993ebaf5064229758271a7713a9af",
+      "uid": "2020-447"
+    },
+    "source": "1. NORTH AMERICAN ICE SERVICE (NAIS)\n   ICEBERG BULLETIN 280001Z MAY.\n2. WARNING! THE INTERNATIONAL ICE PATROL IS\n   EXPERIENCING REDUCED ICEBERG RECONNAISSANCE.\n   ALL ICEBERG LIMITS REPORTED BELOW ARE\n   ESTIMATED. PLEASE NAVIGATE WITH CAUTION.\n3. ICEBERG LIMIT ALONG TRACKLINE JOINING\n   47-04N 055-08W, 45-25N 053-50W,\n   44-20N 047-00W, 46-10N 043-45W,\n   47-25N 043-40W, 51-00N 046-20W,\n   55-00N 050-00W.\n4. ESTIMATED ICEBERG LIMIT ALONG TRACKLINE\n   JOINING\n   55-00N 050-00W, 61-00N 059-00W,\n   62-45N 056-00W, 58-00N 049-00W,\n   59-00N 042-00W, 64-00N 038-00W,\n   64-40N 028-00W.\n5. WESTERN ICEBERG LIMIT ALONG TRACKLINE JOINING\n   50-18N 059-54W, 49-20N 058-06W.\n6. SEA ICE LIMIT ALONG TRACKLINES JOINING:\n   A. 52-30N 055-45W, 52-30N 055-30W,\n      53-45N 055-35W, 55-00N 057-00W,\n      58-00N 059-00W, 59-45N 059-00W,\n      61-00N 061-00W, 61-00N 059-30W,\n      64-00N 057-55W.\n   B. 62-25N 042-04W, 61-51N 041-22W,\n      61-30N 041-58W, 60-28N 042-26W,\n      60-11N 043-05W.\n7. MOST RECENT RECONNAISSANCE:\n   WESTERN LIMIT ICEBERG FLIGHT 21 MAY 20.\n8. REPORT POSITION AND TIME OF ANY ICEBERGS SEA\n   ICE OR STATIONARY RADAR TARGETS THAT MAY\n   LIKELY BE ICE TO THE NEAREST CANADIAN COAST\n   GUARD MARINE COMMUNICATIONS AND TRAFFIC\n   SERVICE STATION OR USING INMARSAT CODE 42.\n9. FOR MORE REPORTING INFORMATION OR TO DOWNLOAD\n   SHAPEFILES AND WEEKLY PREDICTIONS, GO TO\n   WWW.NAVCEN.USCG.GOV/IIP.\n10. CANCEL THIS MSG 290001Z MAY 20.\n"
+  }
+}

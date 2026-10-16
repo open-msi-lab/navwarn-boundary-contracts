@@ -1,0 +1,685 @@
+{
+  "Luna-full-2017-280": {
+    "features": [
+      {
+        "geometry": {
+          "coordinates": [
+            -76.01,
+            36.72833
+          ],
+          "type": "Point"
+        },
+        "id": "2017-280:geometry:0",
+        "properties": {
+          "adapter_closed_ring": false,
+          "adapter_reversed_ring": false,
+          "evidence": [
+            {
+              "end": 152,
+              "quote": "36-43.7N 076-00.6W",
+              "start": 134
+            }
+          ],
+          "geometry_index": 0,
+          "nwie_kind": "POINT",
+          "part": 1,
+          "radius_nm": null,
+          "record_sha256": "d3a97758275d557b268b02c01753ca2bdb95eed7c427d01916d17ded85ccfda8",
+          "review_status": "unreviewed",
+          "source_sha256": "8df47148d5ce9e64174afd9b019188b5aa026f18daccac948bffa149cd63f3e2",
+          "warning_uid": "2017-280",
+          "width_is_attribute_only": false
+        },
+        "type": "Feature"
+      },
+      {
+        "geometry": {
+          "coordinates": [
+            -80.39,
+            25.62333
+          ],
+          "type": "Point"
+        },
+        "id": "2017-280:geometry:1",
+        "properties": {
+          "adapter_closed_ring": false,
+          "adapter_reversed_ring": false,
+          "evidence": [
+            {
+              "end": 185,
+              "quote": "25-37.4N 080-23.4W",
+              "start": 167
+            }
+          ],
+          "geometry_index": 1,
+          "nwie_kind": "POINT",
+          "part": 1,
+          "radius_nm": null,
+          "record_sha256": "d3a97758275d557b268b02c01753ca2bdb95eed7c427d01916d17ded85ccfda8",
+          "review_status": "unreviewed",
+          "source_sha256": "8df47148d5ce9e64174afd9b019188b5aa026f18daccac948bffa149cd63f3e2",
+          "warning_uid": "2017-280",
+          "width_is_attribute_only": false
+        },
+        "type": "Feature"
+      }
+    ],
+    "type": "FeatureCollection"
+  },
+  "Luna-full-2020-447": {
+    "features": [
+      {
+        "geometry": {
+          "coordinates": [
+            [
+              -55.13333,
+              47.06667
+            ],
+            [
+              -53.83333,
+              45.41667
+            ],
+            [
+              -47.0,
+              44.33333
+            ],
+            [
+              -43.75,
+              46.16667
+            ],
+            [
+              -43.66667,
+              47.41667
+            ],
+            [
+              -46.33333,
+              51.0
+            ],
+            [
+              -50.0,
+              55.0
+            ],
+            [
+              -50.0,
+              55.0
+            ],
+            [
+              -59.0,
+              61.0
+            ],
+            [
+              -56.0,
+              62.75
+            ],
+            [
+              -49.0,
+              58.0
+            ],
+            [
+              -42.0,
+              59.0
+            ],
+            [
+              -38.0,
+              64.0
+            ],
+            [
+              -28.0,
+              64.66667
+            ],
+            [
+              -59.9,
+              50.3
+            ],
+            [
+              -58.1,
+              49.33333
+            ],
+            [
+              -55.75,
+              52.5
+            ],
+            [
+              -55.5,
+              52.5
+            ],
+            [
+              -55.58333,
+              53.75
+            ],
+            [
+              -57.0,
+              55.0
+            ],
+            [
+              -59.0,
+              58.0
+            ],
+            [
+              -59.0,
+              59.75
+            ],
+            [
+              -61.0,
+              61.0
+            ],
+            [
+              -59.5,
+              61.0
+            ],
+            [
+              -57.91667,
+              64.0
+            ],
+            [
+              -42.06667,
+              62.41667
+            ],
+            [
+              -41.36667,
+              61.85
+            ],
+            [
+              -41.96667,
+              61.5
+            ],
+            [
+              -42.43333,
+              60.46667
+            ],
+            [
+              -43.08333,
+              60.18333
+            ]
+          ],
+          "type": "LineString"
+        },
+        "id": "2020-447:geometry:0",
+        "properties": {
+          "adapter_closed_ring": false,
+          "adapter_reversed_ring": false,
+          "evidence": [
+            [
+              291,
+              305
+            ],
+            [
+              307,
+              321
+            ],
+            [
+              326,
+              340
+            ],
+            [
+              342,
+              356
+            ],
+            [
+              361,
+              375
+            ],
+            [
+              377,
+              391
+            ],
+            [
+              396,
+              410
+            ],
+            [
+              469,
+              483
+            ],
+            [
+              485,
+              499
+            ],
+            [
+              504,
+              518
+            ],
+            [
+              520,
+              534
+            ],
+            [
+              539,
+              553
+            ],
+            [
+              555,
+              569
+            ],
+            [
+              574,
+              588
+            ],
+            [
+              642,
+              656
+            ],
+            [
+              658,
+              672
+            ],
+            [
+              723,
+              737
+            ],
+            [
+              739,
+              753
+            ],
+            [
+              761,
+              775
+            ],
+            [
+              777,
+              791
+            ],
+            [
+              799,
+              813
+            ],
+            [
+              815,
+              829
+            ],
+            [
+              837,
+              851
+            ],
+            [
+              853,
+              867
+            ],
+            [
+              875,
+              889
+            ],
+            [
+              897,
+              911
+            ],
+            [
+              913,
+              927
+            ],
+            [
+              935,
+              949
+            ],
+            [
+              951,
+              965
+            ],
+            [
+              973,
+              987
+            ]
+          ],
+          "geometry_index": 0,
+          "nwie_kind": "LINE",
+          "part": 1,
+          "radius_nm": null,
+          "record_sha256": "fe9254023ebcdbd63d2e70820d1d8ae936d7bab4b3d579c51cc2aebf4a65a55b",
+          "review_status": "unreviewed",
+          "source_sha256": "bfd5e6206310e3705b52f7a8f9a1f87182d993ebaf5064229758271a7713a9af",
+          "warning_uid": "2020-447",
+          "width_is_attribute_only": false
+        },
+        "type": "Feature"
+      }
+    ],
+    "type": "FeatureCollection"
+  },
+  "Sol-full-2017-280": {
+    "features": [
+      {
+        "geometry": {
+          "coordinates": [
+            [
+              -76.01,
+              36.72833
+            ],
+            [
+              -80.39,
+              25.62333
+            ]
+          ],
+          "type": "MultiPoint"
+        },
+        "id": "2017-280:geometry:0",
+        "properties": {
+          "adapter_closed_ring": false,
+          "adapter_reversed_ring": false,
+          "evidence": [
+            {
+              "end": 114,
+              "quote": "SERVICES UNRELIABLE AT",
+              "start": 92
+            },
+            {
+              "end": 152,
+              "quote": "36-43.7N 076-00.6W",
+              "start": 134
+            },
+            {
+              "end": 185,
+              "quote": "25-37.4N 080-23.4W",
+              "start": 167
+            }
+          ],
+          "geometry_index": 0,
+          "nwie_kind": "MULTIPOINT",
+          "part": 1,
+          "radius_nm": null,
+          "record_sha256": "a3e14658af510e599d8ebfa106f639e1e3e4443b00145cf236eca86aef5b4afc",
+          "review_status": "unreviewed",
+          "source_sha256": "8df47148d5ce9e64174afd9b019188b5aa026f18daccac948bffa149cd63f3e2",
+          "warning_uid": "2017-280",
+          "width_is_attribute_only": false
+        },
+        "type": "Feature"
+      }
+    ],
+    "type": "FeatureCollection"
+  },
+  "Sol-full-2020-447": {
+    "features": [
+      {
+        "geometry": {
+          "coordinates": [
+            [
+              -55.13333,
+              47.06667
+            ],
+            [
+              -53.83333,
+              45.41667
+            ],
+            [
+              -47.0,
+              44.33333
+            ],
+            [
+              -43.75,
+              46.16667
+            ],
+            [
+              -43.66667,
+              47.41667
+            ],
+            [
+              -46.33333,
+              51.0
+            ],
+            [
+              -50.0,
+              55.0
+            ]
+          ],
+          "type": "LineString"
+        },
+        "id": "2020-447:geometry:0",
+        "properties": {
+          "adapter_closed_ring": false,
+          "adapter_reversed_ring": false,
+          "evidence": [
+            {
+              "end": 287,
+              "quote": "ICEBERG LIMIT ALONG TRACKLINE JOINING",
+              "start": 250
+            },
+            {
+              "end": 410,
+              "quote": "47-04N 055-08W, 45-25N 053-50W, 44-20N 047-00W, 46-10N 043-45W, 47-25N 043-40W, 51-00N 046-20W, 55-00N 050-00W",
+              "start": 291
+            }
+          ],
+          "geometry_index": 0,
+          "nwie_kind": "LINE",
+          "part": 3,
+          "radius_nm": null,
+          "record_sha256": "ed7e953eac7b55389efad866b3e7e62a843d6be1440e4bd1e376ed70f2eced71",
+          "review_status": "unreviewed",
+          "source_sha256": "bfd5e6206310e3705b52f7a8f9a1f87182d993ebaf5064229758271a7713a9af",
+          "warning_uid": "2020-447",
+          "width_is_attribute_only": false
+        },
+        "type": "Feature"
+      },
+      {
+        "geometry": {
+          "coordinates": [
+            [
+              -50.0,
+              55.0
+            ],
+            [
+              -59.0,
+              61.0
+            ],
+            [
+              -56.0,
+              62.75
+            ],
+            [
+              -49.0,
+              58.0
+            ],
+            [
+              -42.0,
+              59.0
+            ],
+            [
+              -38.0,
+              64.0
+            ],
+            [
+              -28.0,
+              64.66667
+            ]
+          ],
+          "type": "LineString"
+        },
+        "id": "2020-447:geometry:1",
+        "properties": {
+          "adapter_closed_ring": false,
+          "adapter_reversed_ring": false,
+          "evidence": [
+            {
+              "end": 465,
+              "quote": "ESTIMATED ICEBERG LIMIT ALONG TRACKLINE JOINING",
+              "start": 415
+            },
+            {
+              "end": 588,
+              "quote": "55-00N 050-00W, 61-00N 059-00W, 62-45N 056-00W, 58-00N 049-00W, 59-00N 042-00W, 64-00N 038-00W, 64-40N 028-00W",
+              "start": 469
+            }
+          ],
+          "geometry_index": 1,
+          "nwie_kind": "LINE",
+          "part": 4,
+          "radius_nm": null,
+          "record_sha256": "ed7e953eac7b55389efad866b3e7e62a843d6be1440e4bd1e376ed70f2eced71",
+          "review_status": "unreviewed",
+          "source_sha256": "bfd5e6206310e3705b52f7a8f9a1f87182d993ebaf5064229758271a7713a9af",
+          "warning_uid": "2020-447",
+          "width_is_attribute_only": false
+        },
+        "type": "Feature"
+      },
+      {
+        "geometry": {
+          "coordinates": [
+            [
+              -59.9,
+              50.3
+            ],
+            [
+              -58.1,
+              49.33333
+            ]
+          ],
+          "type": "LineString"
+        },
+        "id": "2020-447:geometry:2",
+        "properties": {
+          "adapter_closed_ring": false,
+          "adapter_reversed_ring": false,
+          "evidence": [
+            {
+              "end": 638,
+              "quote": "WESTERN ICEBERG LIMIT ALONG TRACKLINE JOINING",
+              "start": 593
+            },
+            {
+              "end": 672,
+              "quote": "50-18N 059-54W, 49-20N 058-06W",
+              "start": 642
+            }
+          ],
+          "geometry_index": 2,
+          "nwie_kind": "LINE",
+          "part": 5,
+          "radius_nm": null,
+          "record_sha256": "ed7e953eac7b55389efad866b3e7e62a843d6be1440e4bd1e376ed70f2eced71",
+          "review_status": "unreviewed",
+          "source_sha256": "bfd5e6206310e3705b52f7a8f9a1f87182d993ebaf5064229758271a7713a9af",
+          "warning_uid": "2020-447",
+          "width_is_attribute_only": false
+        },
+        "type": "Feature"
+      },
+      {
+        "geometry": {
+          "coordinates": [
+            [
+              -55.75,
+              52.5
+            ],
+            [
+              -55.5,
+              52.5
+            ],
+            [
+              -55.58333,
+              53.75
+            ],
+            [
+              -57.0,
+              55.0
+            ],
+            [
+              -59.0,
+              58.0
+            ],
+            [
+              -59.0,
+              59.75
+            ],
+            [
+              -61.0,
+              61.0
+            ],
+            [
+              -59.5,
+              61.0
+            ],
+            [
+              -57.91667,
+              64.0
+            ]
+          ],
+          "type": "LineString"
+        },
+        "id": "2020-447:geometry:3",
+        "properties": {
+          "adapter_closed_ring": false,
+          "adapter_reversed_ring": false,
+          "evidence": [
+            {
+              "end": 715,
+              "quote": "SEA ICE LIMIT ALONG TRACKLINES JOINING",
+              "start": 677
+            },
+            {
+              "end": 889,
+              "quote": "52-30N 055-45W, 52-30N 055-30W, 53-45N 055-35W, 55-00N 057-00W, 58-00N 059-00W, 59-45N 059-00W, 61-00N 061-00W, 61-00N 059-30W, 64-00N 057-55W",
+              "start": 723
+            }
+          ],
+          "geometry_index": 3,
+          "nwie_kind": "LINE",
+          "part": 6,
+          "radius_nm": null,
+          "record_sha256": "ed7e953eac7b55389efad866b3e7e62a843d6be1440e4bd1e376ed70f2eced71",
+          "review_status": "unreviewed",
+          "source_sha256": "bfd5e6206310e3705b52f7a8f9a1f87182d993ebaf5064229758271a7713a9af",
+          "warning_uid": "2020-447",
+          "width_is_attribute_only": false
+        },
+        "type": "Feature"
+      },
+      {
+        "geometry": {
+          "coordinates": [
+            [
+              -42.06667,
+              62.41667
+            ],
+            [
+              -41.36667,
+              61.85
+            ],
+            [
+              -41.96667,
+              61.5
+            ],
+            [
+              -42.43333,
+              60.46667
+            ],
+            [
+              -43.08333,
+              60.18333
+            ]
+          ],
+          "type": "LineString"
+        },
+        "id": "2020-447:geometry:4",
+        "properties": {
+          "adapter_closed_ring": false,
+          "adapter_reversed_ring": false,
+          "evidence": [
+            {
+              "end": 715,
+              "quote": "SEA ICE LIMIT ALONG TRACKLINES JOINING",
+              "start": 677
+            },
+            {
+              "end": 987,
+              "quote": "62-25N 042-04W, 61-51N 041-22W, 61-30N 041-58W, 60-28N 042-26W, 60-11N 043-05W",
+              "start": 897
+            }
+          ],
+          "geometry_index": 4,
+          "nwie_kind": "LINE",
+          "part": 6,
+          "radius_nm": null,
+          "record_sha256": "ed7e953eac7b55389efad866b3e7e62a843d6be1440e4bd1e376ed70f2eced71",
+          "review_status": "unreviewed",
+          "source_sha256": "bfd5e6206310e3705b52f7a8f9a1f87182d993ebaf5064229758271a7713a9af",
+          "warning_uid": "2020-447",
+          "width_is_attribute_only": false
+        },
+        "type": "Feature"
+      }
+    ],
+    "type": "FeatureCollection"
+  }
+}

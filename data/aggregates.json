@@ -1,0 +1,303 @@
+{
+  "additional_sample_body_language": {
+    "bilingual": 1,
+    "en": 58,
+    "zh": 41
+  },
+  "corpora": {
+    "china_msa": {
+      "by_type": {
+        "A": 52782,
+        "B": 25856,
+        "C": 72874
+      },
+      "documents": 151512,
+      "excluded": {
+        "body_empty": 365,
+        "short_lt20": 40
+      },
+      "pool": 125251,
+      "warning_or_notice": 125656,
+      "warning_or_notice_years": [
+        2015,
+        2026
+      ]
+    },
+    "navarea_iv": {
+      "messages": 14274,
+      "years": [
+        2012,
+        2024
+      ]
+    }
+  },
+  "description": "Aggregates reported in Sections 4.1-4.2 and Table 5 whose underlying files are not released because they contain reference annotations or China MSA text.",
+  "evidence_span_exact_f1": {
+    "DeepSeek/full": {
+      "f1": 0.4887640449438203,
+      "fn": 751,
+      "fp": 523,
+      "tp": 609
+    },
+    "Flash/full": {
+      "f1": 0.5534136546184739,
+      "fn": 671,
+      "fp": 441,
+      "tp": 689
+    },
+    "Luna/full": {
+      "f1": 0.572192513368984,
+      "fn": 611,
+      "fp": 509,
+      "tp": 749
+    },
+    "Sol/full": {
+      "f1": 0.6131656804733728,
+      "fn": 531,
+      "fp": 515,
+      "tp": 829
+    }
+  },
+  "pairwise_message_f1": {
+    "pairs": [
+      {
+        "a": "Sol/full",
+        "b": "Luna/full",
+        "mean_a": 0.8918137624171694,
+        "mean_b": 0.8408795244368599,
+        "n_paired": 150,
+        "paired_diff": {
+          "alpha": 0.05,
+          "hi": 0.07905284418670475,
+          "lo": 0.024721893395675622,
+          "n": 150,
+          "n_boot": 10000,
+          "point": 0.050934237980309084,
+          "seed": 20260905
+        },
+        "paired_diff_bonferroni": {
+          "alpha": 0.008333333333333333,
+          "hi": 0.08971651231965702,
+          "lo": 0.015464132260276058,
+          "n": 150,
+          "n_boot": 10000,
+          "point": 0.050934237980309084,
+          "seed": 20260905
+        }
+      },
+      {
+        "a": "Sol/full",
+        "b": "Flash/full",
+        "mean_a": 0.8918137624171694,
+        "mean_b": 0.8706198244932508,
+        "n_paired": 150,
+        "paired_diff": {
+          "alpha": 0.05,
+          "hi": 0.047644039074409,
+          "lo": -0.005508596724220243,
+          "n": 150,
+          "n_boot": 10000,
+          "point": 0.02119393792391828,
+          "seed": 20260905
+        },
+        "paired_diff_bonferroni": {
+          "alpha": 0.008333333333333333,
+          "hi": 0.056413487025275426,
+          "lo": -0.014881557418986483,
+          "n": 150,
+          "n_boot": 10000,
+          "point": 0.02119393792391828,
+          "seed": 20260905
+        }
+      },
+      {
+        "a": "Sol/full",
+        "b": "DeepSeek/full",
+        "mean_a": 0.8918137624171694,
+        "mean_b": 0.8436743721825378,
+        "n_paired": 150,
+        "paired_diff": {
+          "alpha": 0.05,
+          "hi": 0.08572499657708217,
+          "lo": 0.01224245607547512,
+          "n": 150,
+          "n_boot": 10000,
+          "point": 0.04813939023463127,
+          "seed": 20260905
+        },
+        "paired_diff_bonferroni": {
+          "alpha": 0.008333333333333333,
+          "hi": 0.09859792978705342,
+          "lo": 0.001237911036040368,
+          "n": 150,
+          "n_boot": 10000,
+          "point": 0.04813939023463127,
+          "seed": 20260905
+        }
+      },
+      {
+        "a": "Luna/full",
+        "b": "Flash/full",
+        "mean_a": 0.8408795244368599,
+        "mean_b": 0.8706198244932508,
+        "n_paired": 150,
+        "paired_diff": {
+          "alpha": 0.05,
+          "hi": 0.002027006325491422,
+          "lo": -0.06100840217219995,
+          "n": 150,
+          "n_boot": 10000,
+          "point": -0.029740300056390806,
+          "seed": 20260905
+        },
+        "paired_diff_bonferroni": {
+          "alpha": 0.008333333333333333,
+          "hi": 0.013500557858726838,
+          "lo": -0.0718871207417974,
+          "n": 150,
+          "n_boot": 10000,
+          "point": -0.029740300056390806,
+          "seed": 20260905
+        }
+      },
+      {
+        "a": "Luna/full",
+        "b": "DeepSeek/full",
+        "mean_a": 0.8408795244368599,
+        "mean_b": 0.8436743721825378,
+        "n_paired": 150,
+        "paired_diff": {
+          "alpha": 0.05,
+          "hi": 0.031160685471180085,
+          "lo": -0.03490893602889418,
+          "n": 150,
+          "n_boot": 10000,
+          "point": -0.002794847745677818,
+          "seed": 20260905
+        },
+        "paired_diff_bonferroni": {
+          "alpha": 0.008333333333333333,
+          "hi": 0.04336180061631017,
+          "lo": -0.0464231660106363,
+          "n": 150,
+          "n_boot": 10000,
+          "point": -0.002794847745677818,
+          "seed": 20260905
+        }
+      },
+      {
+        "a": "Flash/full",
+        "b": "DeepSeek/full",
+        "mean_a": 0.8706198244932508,
+        "mean_b": 0.8436743721825378,
+        "n_paired": 150,
+        "paired_diff": {
+          "alpha": 0.05,
+          "hi": 0.05835551515370051,
+          "lo": -0.0018220632038431187,
+          "n": 150,
+          "n_boot": 10000,
+          "point": 0.02694545231071299,
+          "seed": 20260905
+        },
+        "paired_diff_bonferroni": {
+          "alpha": 0.008333333333333333,
+          "hi": 0.07049233230107214,
+          "lo": -0.010951431052199178,
+          "n": 150,
+          "n_boot": 10000,
+          "point": 0.02694545231071299,
+          "seed": 20260905
+        }
+      }
+    ],
+    "seed": 20260905
+  },
+  "reference_agreement": {
+    "adjudicated": 99,
+    "decision_rows": 155,
+    "dual_agreed": 51,
+    "evidence_span_f1": {
+      "exact": 0.4448034464189553,
+      "relaxed": 0.6483575659666128
+    },
+    "gamma": {
+      "mean": 0.5645793525323476,
+      "n": 146,
+      "undefined": 4
+    },
+    "kappa": {
+      "authority": 0.6139887825800067,
+      "event_type": 0.28514694201747437,
+      "message_function": 0.5586071603727317
+    },
+    "lifecycle_refs_f1": 0.30769230769230776
+  },
+  "reporting_split_audit": {
+    "exact_identifier_overlap": 0,
+    "reporting_items_sharing_dev_template_cluster": 6
+  },
+  "rule_parser_english_75": {
+    "micro_value_counts": {
+      "fn": 318,
+      "fp": 84,
+      "tp": 207
+    },
+    "micro_value_f1": 0.5073529411764706,
+    "n_labels": 75,
+    "per_field_value_counts": {
+      "affected_entities": {
+        "fn": 161,
+        "fp": 0,
+        "tp": 0
+      },
+      "authority": {
+        "fn": 1,
+        "fp": 16,
+        "tp": 3
+      },
+      "event_type": {
+        "fn": 19,
+        "fp": 19,
+        "tp": 56
+      },
+      "geometry": {
+        "fn": 69,
+        "fp": 26,
+        "tp": 31
+      },
+      "lifecycle_refs": {
+        "fn": 3,
+        "fp": 1,
+        "tp": 24
+      },
+      "message_function": {
+        "fn": 1,
+        "fp": 1,
+        "tp": 74
+      },
+      "restrictions": {
+        "fn": 38,
+        "fp": 0,
+        "tp": 0
+      },
+      "temporal": {
+        "fn": 26,
+        "fp": 21,
+        "tp": 19
+      }
+    }
+  },
+  "sampling_frames": {
+    "china_msa": {
+      "n_base_drawn": 360,
+      "n_final": 385,
+      "seed": 20260704
+    },
+    "navarea_iv": {
+      "n_base_drawn": 550,
+      "n_final": 573,
+      "seed": 20260704
+    }
+  }
+}

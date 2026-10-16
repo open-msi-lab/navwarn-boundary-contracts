@@ -1,0 +1,122 @@
+{
+  "claims": "Mapped intermediate geometry, not S-124 conformance or materialized radius footprint",
+  "configurations": {
+    "DeepSeek/full": {
+      "accepted_records": 148,
+      "attempted_records": 150,
+      "features": 189,
+      "geometry_features": 129,
+      "multi_geometry_records": 16,
+      "naive_axis_changed_positions": 660,
+      "naive_axis_out_of_range": 215,
+      "naive_axis_wrong_but_in_range": 445,
+      "null_geometry_records": 60,
+      "positions": 660,
+      "rejections": [
+        {
+          "reason": "NW-IE validator: [Violation(field='geometry[0]', code='RING_SELF_INTERSECTING', detail='non-adjacent polygon edges cross or touch')]",
+          "uid": "2024-171"
+        },
+        {
+          "reason": "NW-IE validator: [Violation(field='geometry[0]', code='POINT_ARITY', detail='2 pairs')]",
+          "uid": "2024-2"
+        }
+      ],
+      "rings_closed": 55,
+      "rings_reoriented": 45,
+      "source_spans_in_geometry": 394,
+      "width_attribute_features": 4
+    },
+    "Flash/full": {
+      "accepted_records": 150,
+      "attempted_records": 150,
+      "features": 278,
+      "geometry_features": 221,
+      "multi_geometry_records": 20,
+      "naive_axis_changed_positions": 690,
+      "naive_axis_out_of_range": 235,
+      "naive_axis_wrong_but_in_range": 455,
+      "null_geometry_records": 57,
+      "positions": 690,
+      "rejections": [],
+      "rings_closed": 57,
+      "rings_reoriented": 49,
+      "source_spans_in_geometry": 283,
+      "width_attribute_features": 4
+    },
+    "Luna/full": {
+      "accepted_records": 150,
+      "attempted_records": 150,
+      "features": 202,
+      "geometry_features": 143,
+      "multi_geometry_records": 19,
+      "naive_axis_changed_positions": 680,
+      "naive_axis_out_of_range": 225,
+      "naive_axis_wrong_but_in_range": 455,
+      "null_geometry_records": 59,
+      "positions": 680,
+      "rejections": [],
+      "rings_closed": 54,
+      "rings_reoriented": 46,
+      "source_spans_in_geometry": 269,
+      "width_attribute_features": 4
+    },
+    "Sol/full": {
+      "accepted_records": 150,
+      "attempted_records": 150,
+      "features": 220,
+      "geometry_features": 165,
+      "multi_geometry_records": 21,
+      "naive_axis_changed_positions": 790,
+      "naive_axis_out_of_range": 335,
+      "naive_axis_wrong_but_in_range": 455,
+      "null_geometry_records": 55,
+      "positions": 790,
+      "rejections": [],
+      "rings_closed": 57,
+      "rings_reoriented": 49,
+      "source_spans_in_geometry": 335,
+      "width_attribute_features": 7
+    },
+    "Sol/validation": {
+      "accepted_records": 100,
+      "attempted_records": 100,
+      "features": 126,
+      "geometry_features": 100,
+      "multi_geometry_records": 10,
+      "naive_axis_changed_positions": 399,
+      "naive_axis_out_of_range": 215,
+      "naive_axis_wrong_but_in_range": 184,
+      "null_geometry_records": 26,
+      "positions": 399,
+      "rejections": [],
+      "rings_closed": 37,
+      "rings_reoriented": 29,
+      "source_spans_in_geometry": 145,
+      "width_attribute_features": 8
+    }
+  },
+  "consumer": "Shapely 2.1.2 / GEOS 3.13.1",
+  "geometry_types": {
+    "LINE": 163,
+    "MULTIPOINT": 12,
+    "POINT": 303,
+    "POLYGON": 280
+  },
+  "new_model_calls": 0,
+  "totals": {
+    "accepted_records": 698,
+    "features": 1015,
+    "geometry_features": 758,
+    "multi_geometry_records": 86,
+    "naive_axis_changed_positions": 3219,
+    "naive_axis_out_of_range": 1225,
+    "naive_axis_wrong_but_in_range": 1994,
+    "null_geometry_records": 257,
+    "positions": 3219,
+    "rings_closed": 260,
+    "rings_reoriented": 218,
+    "source_spans_in_geometry": 1426,
+    "width_attribute_features": 27
+  }
+}
